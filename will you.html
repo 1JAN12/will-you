@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WILL YOU</title>
+    <style>
+        body {
+            
+        background-image: url("https://content.jdmagicbox.com/comp/krishna/z9/9999p8676.8676.141219135851.q1z9/catalogue/kondapalli-fort-kondapalli-krishna-tourist-attraction-fazdkti41g.jpg?clr=143352"); /* Replace 'background.jpg' with your image file name */
+        background-size: cover; /* Adjust the image size to cover the entire viewport */
+        background-repeat: no-repeat; /* Prevent image from repeating */
+        background-attachment: fixed; /* Keep the background fixed while scrolling */
+    
+         font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        #proposal {
+            margin: 10% auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #ff6f61;
+        }
+        p {
+            font-size: 1.5rem;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #ff6f61;
+            color: white;
+            font-size: 1.2rem;
+            border: none;
+            cursor: pointer;
+        }
+
+            /* CSS to style the notification and image pop-up */
+.notification {
+    background-color:#ff6f61;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 998; /* Ensure it's on top of other content */
+}
+
+/* CSS to hide the notification initially */
+
+#ring-picture {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000; /* Ensure it's below the notification */
+    display: none;
+}
+#ring-picture ,
+#notification{
+    display: none;
+}
+
+        
+    </style>
+</head>
+    <div id="proposal">
+        <h1>Not a proposal!!</h1>
+        <p>Dear sudheer(NANI),</p>
+        <p>From the day i met you till today you became the most wanted person in my life.you are the only man that i craver for, you are the only man can give me strenght just by hugging me, you give me butterflies, you made me cry baby too, you made me a strong person who can never able to give up on you,NANI na nuvvu just be mine , i just wanna spend rest of my life with you nanna,its aleady knotted for us,all i want us to be one...be with me nanna till the end...</p>
+        <p>So, with all my heart now i am asking you! do u love me sudheer!:</p>
+        <button onclick="showRingPicture()">Yes, I will</button>
+        <img id="ring-picture" src="https://classroomclipart.com/image/content7/60514/thumb.gif" alt="Engagement Ring">
+        <div id="notification" class="notification"><p>Love you too ❤️</p></div>   
+
+    <script>
+        
+    function showRingPicture() {
+        // Show the engagement ring picture
+        const ringPicture = document.getElementById('ring-picture');
+        ringPicture.style.opacity = '1';
+        ringPicture.style.display = 'block';
+
+        // After a delay, show the notification
+        setTimeout(() => {
+            const notification = document.getElementById('notification');
+            notification.style.opacity = '1';
+            notification.style.display = 'block';
+
+            // Hide both the notification and picture after another delay
+            setTimeout(() => {
+                notification.style.opacity = '0';
+                ringPicture.style.opacity = '0';
+
+                setTimeout(() => {
+                    notification.style.display = 'none';
+                    ringPicture.style.display = 'none';
+                }, 500); // Adjust the delay for hiding the notification if needed
+            }, 2000); // Adjust the duration for displaying the notification if needed
+        }, 1000); // Adjust the delay before showing the notification if needed
+    }
+
+    </script>
+</body>
+</html>
